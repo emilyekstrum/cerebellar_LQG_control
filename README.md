@@ -83,7 +83,7 @@ The state estimate $\hat{x}(t)$ evolves as:
 $$\dot{\hat{x}}(t) = A\hat{x}(t) + Bu(t) + L\!\left(y(t) - C\hat{x}(t)\right)$$
 
 
-
+## TODO: add plots that relate to experimental perturbations
 
 
 ## LQG Terms
