@@ -27,7 +27,7 @@ This repo provides a linear quadratic Gaussian control model to model cerebellar
 
 ``` notebooks/*```: instantiate LQG models with various dimensions (1-10D)
  
- - perturb u (control command) and x_hat (internal state)
+ - perturb u (control command) and x_hat (internal state estimate)
 
 
 ## LQG Formulation
@@ -83,7 +83,34 @@ The state estimate $\hat{x}(t)$ evolves as:
 $$\dot{\hat{x}}(t) = A\hat{x}(t) + Bu(t) + L\!\left(y(t) - C\hat{x}(t)\right)$$
 
 
-## TODO: add plots that relate to experimental perturbations
+## Alignment with experimental studies
+
+### 1. LQG model control command (x_hat) perturbation ~ mossy fiber perturbation
+
+<div style="text-align: center;">
+<img src="mf_setup.png" width="200">
+<img src="mf_plot.png" height="200">
+</div>
+
+
+- Mossy fibers are associated with sending sensory feedback to the cerebellum, which is analogous to feedback in the LQG model that contributes to the calculation of the internal state estimate (x_hat).
+- Optogenetic stimulation of mossy fiber activity is modeled by perturbing LQG x_hat, which results in movement errors that require several trials to be corrected.
+
+Calame DJ, Becker MI, Person AL. Cerebellar associative learning underlies skilled reach adaptation. Nat Neurosci. 2023;26(6):1068-1079. doi:10.1038/s41593-023-01347-y
+
+
+### 2. LQG model state estimate (u) perturbaion ~ anterior interposed (IntA) neurons
+
+<div style="text-align: center;">
+<img src="intA_setup.png" width="150">
+<img src="intA_plot.png" height="200">
+</div>
+
+- Anterior interposed neurons that project to the red nucleus are associated with carrying motor commands from the cerebellum to cerebral areas. 
+- Optogenetic stimulation of IntA activity is modeled by perturbing LQG u, which results in movement trajectory errors that can be corrected within the movement.
+
+
+Dobrott CI, Becker MI, Person AL. Corrective sub-movements link feedback to feedforward control in the cerebellum. Preprint. bioRxiv. 2025;2025.08.01.668191. Published 2025 Aug 1. doi:10.1101/2025.08.01.668191
 
 
 ## LQG Terms
