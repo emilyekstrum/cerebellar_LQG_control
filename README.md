@@ -1,6 +1,6 @@
 # cerebellar_LQG_control
 
-This repo provides a linear quadratic Gaussian control model to model cerebellar pathways for motor movement control. The included notebooks simulate perturbations to cerebellar control and how the system responds to correct the perturbations. While this model demonstrates the corrective nature of the cerebellum, it does not allow learning.
+This repo provides a linear quadratic Gaussian (LQG) control model to model cerebellar pathways for motor movement control. The included notebooks simulate perturbations to cerebellar control and how the system responds to correct the perturbations. While this model demonstrates the corrective nature on motor trajectories of the cerebellum, it does not allow learning.
 
 ## Environment set up
 1. Clone repo to your local machine
@@ -57,6 +57,15 @@ $$v(t) \sim \mathcal{N}(0,\, R_v)$$
 The LQG controller minimizes the quadratic cost:
 
 $$J = \lim_{T \to \infty} \frac{1}{T}\,\mathbb{E}\!\left[\int_0^T \left(x^\top(t)\,Q\,x(t) + u^\top(t)\,R\,u(t)\right)dt\right]$$
+
+<br>
+
+$$ x^\top(t)\,Q\,x(t)$$
+- position cost penalty term; penalizes based on distance from target position
+
+$$ u^\top(t)\,R\,u(t) $$
+- motor control cost penalty term; penalizes control commands based on effort
+
 
 ---
 
