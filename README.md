@@ -89,7 +89,7 @@ $$\dot{\hat{x}}(t) = A\hat{x}(t) + Bu(t) + L\!\left(y(t) - C\hat{x}(t)\right)$$
 
 <p align="center">
     <img src="mf_setup.png" width="200">
-    <img src="mf_plot.png" height="200">
+    <img src="mf_plot.png" height="300">
 </p>
 
 
@@ -103,7 +103,7 @@ Calame DJ, Becker MI, Person AL. Cerebellar associative learning underlies skill
 
 <p align="center">
     <img src="intA_setup.png" width="150">
-    <img src="intA_plot.png" height="200">
+    <img src="intA_plot.png" height="300">
 </p>
 
 - Anterior interposed neurons that project to the red nucleus are associated with carrying motor commands from the cerebellum to cerebral areas. 
