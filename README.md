@@ -87,10 +87,10 @@ $$\dot{\hat{x}}(t) = A\hat{x}(t) + Bu(t) + L\!\left(y(t) - C\hat{x}(t)\right)$$
 
 ### 1. LQG model control command (x_hat) perturbation ~ mossy fiber perturbation
 
-<div style="text-align: center;">
+<p align="center">
     <img src="mf_setup.png" width="200">
     <img src="mf_plot.png" height="200">
-</div>
+</p>
 
 
 - Mossy fibers are associated with sending sensory feedback to the cerebellum, which is analogous to feedback in the LQG model that contributes to the calculation of the internal state estimate (x_hat).
@@ -101,10 +101,10 @@ Calame DJ, Becker MI, Person AL. Cerebellar associative learning underlies skill
 
 ### 2. LQG model state estimate (u) perturbaion ~ anterior interposed (IntA) neurons
 
-<div style="text-align: center;">
+<p align="center">
     <img src="intA_setup.png" width="150">
     <img src="intA_plot.png" height="200">
-</div>
+</p>
 
 - Anterior interposed neurons that project to the red nucleus are associated with carrying motor commands from the cerebellum to cerebral areas. 
 - Optogenetic stimulation of IntA activity is modeled by perturbing LQG u, which results in movement trajectory errors that can be corrected within the movement.
