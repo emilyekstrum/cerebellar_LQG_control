@@ -1,6 +1,6 @@
 """Tests for lqg_model.py
 
-Covers: tvar helper, lqe (Kalman filter), lqr (LQ regulator), and LQG.sample().
+covers: tvar helper, lqe (Kalman filter), lqr (LQ regulator), and LQG.sample().
 """
 import sys
 from pathlib import Path
@@ -13,7 +13,7 @@ from model.lqg_model import LQG, lqe, lqr, tvar
 
 
 
-# Shared helpers
+# helpers
 
 def _make_1d_lqg(horizon=50, target=(10.0, 0.0)):
     """LQG for 1-D motion: state=[pos, vel], control=[accel]"""
